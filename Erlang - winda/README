@@ -14,7 +14,7 @@ Możemy wpływać na realne działanie programu wydając różne komendy.
 Schemat struktury zadaniowej programu
 
 
-{{winda-schemat.png}} // obraz w katalogu projektu
+{{diagram-winda.png}} // obraz w katalogu projektu
 
 
 Działanie:
@@ -31,7 +31,7 @@ W między czasie statystyki są na bieżąco uzupełniane. Chcąc zatrzymać pro
 
 Przykładowe uruchomienie:
 
-{{winda-przyklad.png}}
+{{pwir-winda.png}}
 
 Krótko jak działa program:
 Wszystko jest oddzielnym wątkiem: winda, oddzielne piętra, wyświetlanie, statystyki, nasłuchiwanie co napisze użytkownik, każdy nowy czekający również jest oddzielnym wątkiem ( oraz oddzielny wątek do tworzenia czekających). Wysyłają one sobie nawzajem komunikaty.
@@ -40,9 +40,8 @@ Winda przyjeżdża na piętro i wysyła sygnał do piętra, że na nim jest i pr
 Jeśli chcą to są usuwane z windy, a ich wątek się kończy. W międzyczasie winda, ludzie i piętra wysyłają komunikaty do wątku wyświetlającego gdzie są itd. tak aby dobrze to przedstawić i do wątku zbierającego statystyki, który też później je wyświetla. W międzyczasie możemy przyjmować komunikaty od użytkownika i wysyłać je do odpowiednich wątków, który musi je obsłużyć.
 
 Możliwe rozszerzenie:
+* symulacja jazdy kilku wind
 
-symulacja jazdy kilku wind
 Info:
-
-do wyświetlania wykorzystano kody ESCAPE
-połowa nowych osób czeka na parterze
+* do wyświetlania wykorzystano kody ESCAPE
+* połowa nowych osób czeka na parterze
