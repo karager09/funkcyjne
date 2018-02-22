@@ -1,0 +1,19 @@
+AUTOR :: PIOTR KARAŚ
+
+Grę najlepiej skompilować używając następującej komendy:
+
+ghc --make -threaded  -rtsopts -with-rtsopts=-N gomoku_3.hs -o gomoku
+
+Zapewni to wielowątkowość gry (Zużycie CPU około 3,5 razy większe).
+
+Uruchomienie: ./gomoku
+
+Przesłane zostały dwie wersje działającej gry z oznaczeniami 3 i 4.
+Chodzi o głębokość do jakiej schodzimy przeszukując drzewo.
+Dla 3 (max, min, max) gra działa prawie w czasie rzeczywistym, jednak dla niektórych sytuacji zachowanie jest nieodpowiednie (co wynika z za małej głębokości).
+Natomist dla 4 (max, min, max, min) gra działa naprawdę dobrze, jednak dla wykonanych już kilku ruchów czas obliczania następnego jest coraz dłuższy.
+
+
+Po uruchomienu wyświetlają się podstawowe zasady gry i sposób wprowadzania swojego ruchu.
+
+Na końcu gry wyświetlana jest historia jej ruchów.
