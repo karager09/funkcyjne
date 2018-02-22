@@ -1,0 +1,87 @@
+V "GNAT Lib v7"
+M P W=b
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV SPARK_05
+
+U sito%b		sito.adb		460d6ec8 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W unchecked_deallocation%s
+
+D ada.ads		20170111094541 76789da1 ada%s
+D a-except.ads		20170111094543 291912d5 ada.exceptions%s
+D a-inteio.ads		20170111094543 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20170111094543 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20170111094541 119b8fb3 ada.streams%s
+D a-tags.ads		20170111094541 01f5e3ef ada.tags%s
+D a-textio.ads		20170111094541 386df5d4 ada.text_io%s
+D a-tiinio.ads		20170111094541 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20170111094543 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170111094543 5ab55268 interfaces%s
+D i-cstrea.ads		20170111094541 e53d8b8e interfaces.c_streams%s
+D sito.adb		20171102191800 a96e041c sito%b
+D system.ads		20170526112901 4635ec04 system%s
+D s-conca3.ads		20170111094543 0b705ca5 system.concat_3%s
+D s-crtl.ads		20170111094541 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170111094543 54135002 system.exception_table%s
+D s-ficobl.ads		20170111094543 078245e4 system.file_control_block%s
+D s-imgint.ads		20170111094541 02dbe0c2 system.img_int%s
+D s-parame.ads		20170111094543 7e2a0d7f system.parameters%s
+D s-soflin.ads		20170111094543 14e1eb6c system.soft_links%s
+D s-stache.ads		20170111094543 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170111094543 09bd3940 system.standard_library%s
+D s-stoele.ads		20170111094543 2dc34a04 system.storage_elements%s
+D s-traent.ads		20170111094543 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170111094543 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20170111094543 1b7d22d2 system.wch_con%s
+D unchdeal.ads		20170111094541 214516a4 unchecked_deallocation%s
+X 1 ada.ads
+16K9*Ada 20e8 12|2r6 2r19 3r5 3r18
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|2w23 3r22
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|2w10 3r9
+242U14*Put 12|44s11
+263U14*Put_Line 12|39s5 41s5
+X 12 sito.adb
+5U11*Sito 5b11 88l5 88t9
+7R6 Element 10e11
+8i9 Data{integer} 44r23 61r34 61r49
+9p9 Next 27m24 28r34 47r12 59r32 62m44 62r58 64r53 67r48 72r24
+12P6 Elem_Ptr 14r55 17r46 21r44 22r10 23r9 52r38 53r9 54r14 55r9 79r9
+14U11 Free[27|20] 63s33
+17V10 DodajElement{12P6} 17>23 22s22 27s32
+17i23 Y{integer} 18r15
+21V10 TworzListe{12P6} 21b10 21>21 31l5 31t15 82s10
+21i21 X{integer} 26r21
+22p1 Parent{12P6} 25r18 27r17 28m17 28r27
+23p1 First{12P6} 25m9 30r16
+26i13 I{integer} 27r45
+35U11 Print 35b11 35^17 49l5 49t10 83s1 86s1
+35p17 List(7R6) 36r25 38r6
+36p3 L(7R6) 43r9 44r21 47m5 47r10
+52U11 UsunNiepierwsze 52b11 52>27 74l5 74t20 85s1
+52p27 First{12P6} 53r21
+53p1 Outer{12P6} 57r15 58r31 59r26 61r43 72m9 72r18
+54p1 BeforInner{12P6} 58m17 62r33 64r42 66m33
+55p1 Inner{12P6} 59m17 60r23 61r28 62r52 63m38 63r38 64m33 66r47 67m33 67r42
+79p1 Lista{12P6} 82m1 83r7 85r17 86r7
+X 27 unchdeal.ads
+20u11*Unchecked_Deallocation 12|2w40 14r23
+

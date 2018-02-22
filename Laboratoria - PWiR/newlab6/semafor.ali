@@ -1,0 +1,103 @@
+V "GNAT Lib v7"
+M P W=b
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_SELECT_STATEMENTS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV SPARK_05
+RV MAX_SELECT_ALTERNATIVES=1
+RV MAX_TASK_ENTRIES=2
+RV MAX_TASKS=1+
+
+U semafor%b		semafor.adb		3d99ca28 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20170111094541 76789da1 ada%s
+D a-except.ads		20170111094543 291912d5 ada.exceptions%s
+D a-finali.ads		20170111094543 bf4f806b ada.finalization%s
+D a-ioexce.ads		20170111094543 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20170111094541 a87e2da7 ada.real_time%s
+D a-stream.ads		20170111094541 119b8fb3 ada.streams%s
+D a-tags.ads		20170111094541 01f5e3ef ada.tags%s
+D a-textio.ads		20170111094541 386df5d4 ada.text_io%s
+D a-unccon.ads		20170111094543 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170111094543 5ab55268 interfaces%s
+D i-c.ads		20170111094543 5421119b interfaces.c%s
+D i-cstrea.ads		20170111094541 e53d8b8e interfaces.c_streams%s
+D semafor.adb		20171114162954 05f43ffc semafor%b
+D system.ads		20170526112901 4635ec04 system%s
+D s-atacco.ads		20170111094541 4c36d12f system.address_to_access_conversions%s
+D s-conca2.ads		20170111094541 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20170111094541 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170111094543 54135002 system.exception_table%s
+D s-ficobl.ads		20170111094543 078245e4 system.file_control_block%s
+D s-finroo.ads		20170111094541 4ff27390 system.finalization_root%s
+D s-imgboo.ads		20170111094543 f5d971eb system.img_bool%s
+D s-imgint.ads		20170111094541 02dbe0c2 system.img_int%s
+D s-linux.ads		20170111094543 2fda6ad1 system.linux%s
+D s-multip.ads		20170111094543 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20170915121955 55af424c system.os_constants%s
+D s-osinte.ads		20170327094931 ad16bc4a system.os_interface%s
+D s-parame.ads		20170111094543 7e2a0d7f system.parameters%s
+D s-soflin.ads		20170111094543 14e1eb6c system.soft_links%s
+D s-stache.ads		20170111094543 a37c21ec system.stack_checking%s
+D s-stausa.ads		20170111094543 017a0a05 system.stack_usage%s
+D s-stalib.ads		20170111094543 09bd3940 system.standard_library%s
+D s-stoele.ads		20170111094543 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20170111094543 2b3f8252 system.task_info%s
+D s-taspri.ads		20170111094543 e3ab4429 system.task_primitives%s
+D s-taprop.ads		20170111094543 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20170120101849 05d6152c system.tasking%s
+D s-taprob.ads		20170111094541 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20170111094541 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20170111094541 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20170120101820 5a53a7c6 system.tasking.stages%s
+D s-traent.ads		20170111094543 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170111094543 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20170111094543 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 13|1r6 2r5
+X 8 a-textio.ads
+49K13*Text_IO 471e16 13|1w10 2r9
+263U14*Put_Line 13|26s33 40s25 52s17
+X 13 semafor.adb
+7U11*Semafor 7b11 65l5 65t12
+10t6 Sem 18b11 45l5 45t8 50r9 54r9
+11Y7 CzekajAzWolny 23b24 35l21 35t34 50s13
+12Y7 Zwolnij 38b24 41l21 41t28 54s13
+15T11 Zadanie 15d19 48b11 55l5 55t12 57r5 58r5 59r5 60r5
+15i19 N{integer} 52r48
+19b1 czyWolny{boolean} 24r28 25m33 26r42 29r39 32m33 39m25 40r34
+28l33 L 31l42 31e43
+51i13 I{integer}
+57t1 Z1{15T11}
+58t1 Z2{15T11}
+59t1 Z3{15T11}
+60t1 Z4{15T11}
+X 30 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

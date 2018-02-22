@@ -1,0 +1,109 @@
+V "GNAT Lib v7"
+M P W=b
+P ZX
+
+RN
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U lab3%b		lab3.adb		d3a5fbaf NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.img_lld%s	s-imglld.adb		s-imglld.ali
+W system.img_real%s	s-imgrea.adb		s-imgrea.ali
+
+D ada.ads		20170111094541 76789da1 ada%s
+D a-calend.ads		20170111094541 2d5f01d4 ada.calendar%s
+D a-except.ads		20170111094543 291912d5 ada.exceptions%s
+D a-ioexce.ads		20170111094543 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20170111094541 bb51c45a ada.numerics%s
+D a-nuflra.ads		20170111094541 4056ab7a ada.numerics.float_random%s
+D a-stream.ads		20170111094541 119b8fb3 ada.streams%s
+D a-tags.ads		20170111094541 01f5e3ef ada.tags%s
+D a-textio.ads		20170111094541 386df5d4 ada.text_io%s
+D a-unccon.ads		20170111094543 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170111094543 5ab55268 interfaces%s
+D i-cstrea.ads		20170111094541 e53d8b8e interfaces.c_streams%s
+D lab3.adb		20171019191929 86c1a4d5 lab3%b
+D system.ads		20170526112901 4635ec04 system%s
+D s-conca3.ads		20170111094543 0b705ca5 system.concat_3%s
+D s-crtl.ads		20170111094541 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170111094543 54135002 system.exception_table%s
+D s-ficobl.ads		20170111094543 078245e4 system.file_control_block%s
+D s-imglld.ads		20170111094541 f3220969 system.img_lld%s
+D s-imgrea.ads		20170111094543 c7a851e2 system.img_real%s
+D s-parame.ads		20170111094543 7e2a0d7f system.parameters%s
+D s-rannum.ads		20170111094543 99ade2f2 system.random_numbers%s
+D s-soflin.ads		20170111094543 14e1eb6c system.soft_links%s
+D s-stache.ads		20170111094543 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170111094543 09bd3940 system.standard_library%s
+D s-stoele.ads		20170111094543 2dc34a04 system.storage_elements%s
+D s-traent.ads		20170111094543 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170111094543 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20170111094543 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 13|3r6 3r19 3r46 4r5 4r18 4r45
+X 2 a-calend.ads
+36K13*Calendar 395e17 13|3w50 4r49
+44I9*Time<213I9> 13|7r17
+58V13*Clock{44I9} 13|64s15 79s15
+105V14*"-"{duration} 13|80s17
+213I9 Time_Rep<long_long_integer>
+X 5 a-numeri.ads
+16K13*Numerics 32e17 13|3r23 4r22
+X 6 a-nuflra.ads
+41K22*Float_Random 74e30 13|3w32 4r31
+47R9*Generator<22|63R9> 13|23r14
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<22|71p13> 13|27s28
+53U14*Reset<22|100p14> 13|25s9
+X 9 a-textio.ads
+49K13*Text_IO 471e16 13|3w10 4r9
+52P9*File_Type 13|52r14
+53n32*Out_File{53E9} 13|55r20
+86U14*Create 13|55s9
+98U14*Close 13|60s9
+259U14*Put_Line 13|56s9 58s17
+263U14*Put_Line 13|17s17 71s17 73s17 81s9
+X 13 lab3.adb
+6U11*Lab3 6b11 83l5 83t9
+7i9 T1{2|44I9} 64m9 80r19
+7i13 T2{2|44I9} 79m9 80r14
+8o9 D{duration} 80m9 81r39
+9A14 Wektor(float)<integer> 10r13 13r28 22r39 32r25 35r26 51r32
+10a9 W1{9A14} 66m27 66r27 68m14 68r14 69m16 69r16 70r21 76r23
+13U11 Wypisz 13b11 13=18 19l5 19t11 69s9
+13a18 X{9A14} 15r24
+15f13 element=15:24{float} 17r26
+22U11 WypelnijRandomowo 22b11 22=29 29l5 29t22 66s9
+22a29 X{9A14} 26m24 26r24
+23r9 Gen{6|47R9} 25r15 27r35
+26f13 element=26:24{float} 27r17
+32V10 IsSorted{boolean} 32>19 70s12
+32a19 V{9A14} 33r23 33r35 33r50 33r58
+33i18 i{integer} 33r52 33r60
+35U11 Sort 35b11 35=16 48l5 48t9 68s9
+35a16 V{9A14} 38r18 38r29 39r26 39r37 40r28 40r35 41r41 42m33 42r41 43m33
+36f1 Temp{float} 41m33 43r43
+38i13 i{integer} 39r46
+39i21 j{integer} 40r30 40r37 41r43 42r35 42r43 43r35
+51U11 ZapiszDoPliku 51b11 51>25 61l5 61t18 76s9
+51a25 V1{9A14} 57r18
+52p9 Pl{9|52P9} 55m16 55r16 56r18 58r26 60m15 60r15
+53a9 Nazwa{string} 55r30
+57f13 I=57:18{float} 58r29
+

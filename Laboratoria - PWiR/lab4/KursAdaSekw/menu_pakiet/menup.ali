@@ -1,0 +1,54 @@
+V "GNAT Lib v7"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U menup%b		menup.adb		c99b6edf NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W opcje%s		opcje.adb		opcje.ali
+
+D ada.ads		20170111094541 76789da1 ada%s
+D a-except.ads		20170111094543 291912d5 ada.exceptions%s
+D a-ioexce.ads		20170111094543 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20170111094541 119b8fb3 ada.streams%s
+D a-tags.ads		20170111094541 01f5e3ef ada.tags%s
+D a-textio.ads		20170111094541 386df5d4 ada.text_io%s
+D a-unccon.ads		20170111094543 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170111094543 5ab55268 interfaces%s
+D i-cstrea.ads		20170111094541 e53d8b8e interfaces.c_streams%s
+D menup.adb		20140122161033 f7208069 menup%b
+D opcje.ads		20140122161037 06d61b62 opcje%s
+D system.ads		20170526112901 4635ec04 system%s
+D s-crtl.ads		20170111094541 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170111094543 54135002 system.exception_table%s
+D s-ficobl.ads		20170111094543 078245e4 system.file_control_block%s
+D s-parame.ads		20170111094543 7e2a0d7f system.parameters%s
+D s-soflin.ads		20170111094543 14e1eb6c system.soft_links%s
+D s-stache.ads		20170111094543 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170111094543 09bd3940 system.standard_library%s
+D s-stoele.ads		20170111094543 2dc34a04 system.storage_elements%s
+D s-traent.ads		20170111094543 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170111094543 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20170111094543 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 10|3r6 4r5
+X 6 a-textio.ads
+49K13*Text_IO 471e16 10|3w10 4r9
+166U14*New_Line 10|11s9
+223U14*Get_Immediate 10|23s9
+263U14*Put_Line 10|12s9 13s5 14s9 15s9 16s9 17s9 29s22 32s3
+X 10 menup.adb
+6U11*MenuP 6b11 33l5 33t10
+7e3 Zn{character} 23m23 24r19 25r14
+9U13 Pisz_Menu 9b13 18l7 18t16 22s5
+X 11 opcje.ads
+4K9*Opcje 10|3w19 4r18 11|10e10
+6U11*Opcja_S 10|26s23
+7U11*Opcja_C 10|27s23
+8U11*Opcja_P 10|28s23
+

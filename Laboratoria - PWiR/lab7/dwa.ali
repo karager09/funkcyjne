@@ -1,0 +1,61 @@
+V "GNAT Lib v7"
+M P W=b
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_IO
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV SPARK_05
+
+U dwa%b			dwa.adb			9f7a0d94 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.img_char%s	s-imgcha.adb		s-imgcha.ali
+
+D ada.ads		20170111094541 76789da1 ada%s
+D a-except.ads		20170111094543 291912d5 ada.exceptions%s
+D a-ioexce.ads		20170111094543 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20170111094541 119b8fb3 ada.streams%s
+D a-tags.ads		20170111094541 01f5e3ef ada.tags%s
+D a-textio.ads		20170111094541 386df5d4 ada.text_io%s
+D a-unccon.ads		20170111094543 31484697 ada.unchecked_conversion%s
+D dwa.adb		20171126155245 a717f840 dwa%b
+D interfac.ads		20170111094543 5ab55268 interfaces%s
+D i-cstrea.ads		20170111094541 e53d8b8e interfaces.c_streams%s
+D system.ads		20170526112901 4635ec04 system%s
+D s-crtl.ads		20170111094541 0ebbdb71 system.crtl%s
+D s-exctab.ads		20170111094543 54135002 system.exception_table%s
+D s-ficobl.ads		20170111094543 078245e4 system.file_control_block%s
+D s-imgcha.ads		20170111094541 9c3458e7 system.img_char%s
+D s-parame.ads		20170111094543 7e2a0d7f system.parameters%s
+D s-soflin.ads		20170111094543 14e1eb6c system.soft_links%s
+D s-stache.ads		20170111094543 a37c21ec system.stack_checking%s
+D s-stalib.ads		20170111094543 09bd3940 system.standard_library%s
+D s-stoele.ads		20170111094543 2dc34a04 system.storage_elements%s
+D s-traent.ads		20170111094543 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170111094543 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20170111094543 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 8|1r6 2r5
+X 6 a-textio.ads
+49K13*Text_IO 471e16 8|1w10 2r9
+263U14*Put_Line 8|55s9
+X 8 dwa.adb
+4U11*dwa 4b11 56l5 56t8
+6A6 TBuf(character)<integer>
+10i9 Rozmiar{natural} 13r46 24r15
+11E14 Typ_Elementu 13r58 18r38 19r40 23r30 35r32
+12k9 Buf_Gen 10z9 11z14 20l5 20e12 22b14 46l5 46t12 50r20
+13A14*TBuf1(11E14)<integer> 14r13
+14a9*B{13A14} 25m9 27r23 37r20 39r21
+15i9*LiczElem{integer} 24r4 26m9 26r21 36r4 38m9 38r21
+16i9*PozPob{integer} 37r22 39r12 40m17 41m14 41r24
+17i9*PozWstaw{integer} 25r11 27r12 28m17 29m14 29r26
+18U19*Wstaw 18>25 23b11 32l5 32t10 53s13[50]
+18*25 Element{11E14} 23b17 25r24
+19U19*Pobierz 19<27 35b11 44l5 44t12 54s13[50]
+19*27 Element{11E14} 35b19 37m9
+50K9 Cos[12] 53r9 54r9
+51e1 Ch{character} 54m21 55r18
+
