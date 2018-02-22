@@ -1,0 +1,48 @@
+Symulacja windy
+Imię nazwisko: Piotr Karaś 
+
+
+Cele projektu: 
+Celem programu było zasymulowanie działania windy w języku erlang. 
+Na każdym piętrze mamy dwa przyciski (strzałka w górę i strzałka w dół) sygnalizujące odpowiednie zdarzenia: ktoś przyszedł, czeka na windę i chce jechać do góry albo na dół.
+Winda dostaje te sygnały i powinna odpowiednio zareagować (przyjechać po czekających i zawieźć ich we wskazane miejsca).
+Po tym jak człowiek wsiądzie do windy przyciska przycisk pokazujący, na które piętro chce jechać.
+Symulacja przedstawia piętra na których czeka odpowiednia liczba osób oraz windę jeżdżącą między nimi.
+Na piętrach 'd' znaczy człowieka czekającego na zjazd na dół, 'G' znaczy człowieka czekającego na wyjazd do góry. Na początku (w kodzie) możemy ustalić ile pięter ma nasz budynek, jak szybko jeździ winda i jak szybko przychodzą osoby, które chcą zostać obsłużone.
+Wyświetlają się również statystyki odnośnie przejazdów: średni czas czekania na przyjazd windy, ilość obsłużonych osób, ogólny czas korzystania z windy (czekanie i jazda) i ile minęło.
+Możemy wpływać na realne działanie programu wydając różne komendy.
+Schemat struktury zadaniowej programu
+
+
+{{winda-schemat.png}} // obraz w katalogu projektu
+
+
+Działanie:
+Po „skompilowaniu” programu w środowisku erlang ( c(winda). ) i uruchomieniu głównej pętli programu ( winda:main(). ) wyświetla się nam panel na którym widać naszą symulację.
+U góry pokazane są podstawowe statystyki z naszego modelu.
+Na dole mamy podane komendy, które możemy wykorzystywać:
+start - startujemy windę (domyślnie wystartowana);
+stop - stopujemy windę (po której możemy ją zastartować);
+stop_tworzenie - stopujemy przychodzenie nowych ludzi;
+start_tworzenie - startujemy przychodzenie;
+zmien_winda - zmieniamy szybkość z jaką porusza się winda, po wpisaniu taj komendy otrzymujemy znak zachęty po którym wpisujemy (float) o ile razy ma się zwiększyć okres jazdy między kolejnymi piętrami (przykładowo po wpisaniu 0.5 zwiększymy szybkość 2 razy);
+zmien_tworzenie - podobnie jak przy zmien_winda zmieniamy szybkość przychodzenia nowych osób, które chcą zostać obsłużone, po tym mamy wpisać liczbę (float), 0.5 - zwiększa 2 razy szybkość.
+W między czasie statystyki są na bieżąco uzupełniane. Chcąc zatrzymać program najlepiej zrobić to „na ostro” Ctr+Z.
+
+Przykładowe uruchomienie:
+
+{{winda-przyklad.png}}
+
+Krótko jak działa program:
+Wszystko jest oddzielnym wątkiem: winda, oddzielne piętra, wyświetlanie, statystyki, nasłuchiwanie co napisze użytkownik, każdy nowy czekający również jest oddzielnym wątkiem ( oraz oddzielny wątek do tworzenia czekających). Wysyłają one sobie nawzajem komunikaty.
+Przykładowo tworzymy nowy wątek (przychodzi nowa osoba) i wysyła on sygnał do piętra, że na nim czeka i chce jechać w górę(dół). Piętro wysyła sygnał do windy (o ile jeszcze nie wysłało), że przycisk został wciśnięty.
+Winda przyjeżdża na piętro i wysyła sygnał do piętra, że na nim jest i przejmuje PIDy osób, które wsiadły do windy i odpytuje je gdzie chcą jechać. Będąc na każdym piętrze wysyła komunikaty do osób czekających w środku, pytając czy nie chcą wysiąść.
+Jeśli chcą to są usuwane z windy, a ich wątek się kończy. W międzyczasie winda, ludzie i piętra wysyłają komunikaty do wątku wyświetlającego gdzie są itd. tak aby dobrze to przedstawić i do wątku zbierającego statystyki, który też później je wyświetla. W międzyczasie możemy przyjmować komunikaty od użytkownika i wysyłać je do odpowiednich wątków, który musi je obsłużyć.
+
+Możliwe rozszerzenie:
+
+symulacja jazdy kilku wind
+Info:
+
+do wyświetlania wykorzystano kody ESCAPE
+połowa nowych osób czeka na parterze
